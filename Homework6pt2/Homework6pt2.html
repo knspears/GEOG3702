@@ -11,10 +11,13 @@
     <h2>A note before we begin...</h2>
     <h4>While attempting to complete the ratio for my choropleth I realized that I used the wrong data from the CSV that I downloaded from census.data.gov. In my original choropleth I used the total number of households in each Wisconsin county in place of the number of households that used food stamps in 2019, resulting in my numbers being much larger than they should have been. After trying to rationalize it against population data for each country, I realized my error when the counties were reporting that 70-80% of the households were using food stamps, which is incorrect (the actual figure is closer to ~15% for the entire state of WI). Long story short, I went back and fixed my original choropleth to show the number of households that used food stamps in 2019 so I could complete the second part of this assignment correctly. That corrected choropleth is located below.</h4>
     <a href="./Homework_6_households.png"> 
-        <img src="./Homework_6_households.png" alt="Homework 6 pt2 Map" width='500px'>
+        <img src="./Homework_6_households.png" alt="Homework 6 pt2 Map" width='300px'>
     </a>
     <h4>Projection: NAD83(NSRS2007) / Wisconsin Transverse Mercator (EPSG: 3701)</h4>
 
+    <h2>Ratio Choropleths</h2>
+    <h4>I used a percentage to display the data in my chorophleth because it was the most concise way to display the ratio of data that I had. Since my ratio of # of households using food stamps to # of total houses per county is relatively low (most are between a 1:10 and 1:15 ratio), it didn't really make sense to display my data as a number per thousand, ten thousand, etc. because the numbers would be so small it wouldn't really be comprehensible. By displaying my data as percentages instead, I was able to make the ratios larger (whole) numbers that were a little easier to understand. The ratio/calculation for my data is as follows:</h4>
+        <h4>(# of households per county using food stamps / total # of households per county) * 100 = % of households using food stamps per county</h4>
     <h2>Mode 1: Equal Count (Quantile)</h2>
     <a href="./Homework_6_EqualCount.png">
         <img src="./Homework_6_EqualCount.png" alt="Equal Count" width='500px'>
